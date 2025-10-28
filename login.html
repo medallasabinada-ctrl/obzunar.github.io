@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 40px; }
+      .login { max-width: 300px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 6px; }
+      label, input { display: block; width: 100%; margin-bottom: 10px; }
+      .error { color: red; }
+    </style>
+</head>
+<body>
+    <div class="login">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="username">Username:</label>
+        <input id="username" name="username" type="text" required>
+        <label for="password">Password:</label>
+        <input id="password" name="password" type="password" required>
+        <button type="submit">Login</button>
+        <div id="error" class="error"></div>
+      </form>
+    </div>
+
+    <script>
+      document.getElementById('loginForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const username = document.getElementById('username').value.trim();
+        const password = document.getElementById('password').value.trim();
+
+        fetch('users.json')
+          .then(response => response.json())
+          .then(users => {
+            const user = users.find(u => u.username === username && u.password === password);
+            if (user) {
+              document.getElementById('error').textContent = "";
+              alert('Login successful!');
+              // Redirect or show logged-in page here
+            } else {
+              document.getElementById('error').textContent = "Invalid username or password!";
+            }
+          })
+          .catch(() => {
+            document.getElementById('error').textContent = "Unable to check credentials.";
+          });
+      });
+    </script>
+</body>
+</html>
