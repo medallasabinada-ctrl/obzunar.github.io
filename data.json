@@ -15,3 +15,14 @@
     "score": 72
   }
 ]
+
+[
+  {
+    "username": "medz",
+    "password": "password123"
+  },
+  {
+    "username": "bob",
+    "password": "secret456"
+  }
+]
