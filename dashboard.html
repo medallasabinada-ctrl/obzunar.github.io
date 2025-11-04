@@ -1,90 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Barangay Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Sidebar -->
   <div class="sidebar">
     <div class="sidebar-header">
       <h2>Barangay System</h2>
     </div>
     <ul class="menu">
-      <li><a href="#">🏠 Dashboard</a></li>
-      <li><a href="#">👥 Residents</a></li>
-      <li><a href="#">🚨 Incidents</a></li>
-      <li><a href="#">📂 Records</a></li>
-      <li><a href="#">⚙️ Settings</a></li>
+      <li><a href="index.html" class="active">🏠 Dashboard</a></li>
+      <li><a href="residents.html">👥 Residents</a></li>
+      <li><a href="incidents.html">🚨 Incidents</a></li>
+      <li><a href="records.html">📂 Records</a></li>
+      <li><a href="settings.html">⚙️ Settings</a></li>
     </ul>
-    <div class="logout">
-      <a href="#">🚪 Logout</a>
-    </div>
+    <div class="logout"><a href="#">🚪 Logout</a></div>
   </div>
 
-  <!-- Main Content -->
   <div class="main-content">
     <div class="header">
-      <h1>Welcome to Barangay Information Dashboard</h1>
+      <h1>Welcome to Barangay Dashboard</h1>
       <p>Integrated Barangay Incident Management and Digital Resident Records System</p>
     </div>
 
     <div class="cards">
-      <div class="card">
-        <h3>Total Residents</h3>
-        <p>3,250</p>
-      </div>
-
-      <div class="card">
-        <h3>Active Incidents</h3>
-        <p>12 Ongoing</p>
-      </div>
-
-      <div class="card">
-        <h3>Resolved Cases</h3>
-        <p>98%</p>
-      </div>
-
-      <div class="card">
-        <h3>Barangay Officials</h3>
-        <p>8 Members</p>
-      </div>
-    </div>
-
-    <div class="content-section">
-      <h2>📋 Recent Reports</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Incident ID</th>
-            <th>Type</th>
-            <th>Date</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>#INC-2025-001</td>
-            <td>Fire</td>
-            <td>Nov 3, 2025</td>
-            <td><span class="status ongoing">Ongoing</span></td>
-          </tr>
-          <tr>
-            <td>#INC-2025-002</td>
-            <td>Dispute</td>
-            <td>Nov 2, 2025</td>
-            <td><span class="status resolved">Resolved</span></td>
-          </tr>
-          <tr>
-            <td>#INC-2025-003</td>
-            <td>Medical</td>
-            <td>Nov 1, 2025</td>
-            <td><span class="status pending">Pending</span></td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="card"><h3>Total Residents</h3><p>3,250</p></div>
+      <div class="card"><h3>Active Incidents</h3><p>12 Ongoing</p></div>
+      <div class="card"><h3>Resolved Cases</h3><p>98%</p></div>
+      <div class="card"><h3>Barangay Officials</h3><p>8 Members</p></div>
     </div>
   </div>
 </body>
