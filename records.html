@@ -3,34 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Records - Barangay System</title>
+  <title>Barangay Records</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="sidebar">
-    <div class="sidebar-header"><h2>Barangay System</h2></div>
-    <ul class="menu">
-      <li><a href="dashboard.html">🏠 Dashboard</a></li>
-      <li><a href="residents.html">👥 Residents</a></li>
-      <li><a href="incidents.html">🚨 Incidents</a></li>
-      <li><a href="records.html" class="active">📂 Records</a></li>
-      <li><a href="settings.html">⚙️ Settings</a></li>
-    </ul>
-    <div class="logout"><a href="#">🚪 Logout</a></div>
+    <div>
+      <h2>Barangay System</h2>
+      <ul>
+        <li><a href="index.html">🏠 Dashboard</a></li>
+        <li><a href="records.html" class="active">📋 Records</a></li>
+        <li><a href="incidents.html">🚨 Incidents</a></li>
+        <li><a href="reports.html">📄 Reports</a></li>
+        <li><a href="settings.html">⚙️ Settings</a></li>
+      </ul>
+    </div>
+    <div class="logout">Logout</div>
   </div>
 
   <div class="main-content">
     <div class="header">
-      <h1>Barangay Records</h1>
-      <p>Access uploaded barangay documents and certifications.</p>
+      <h1>Barangay Resident Records</h1>
+      <p>List of households and their residents</p>
     </div>
 
-    <div class="content-section">
-      <ul class="records-list">
-        <li>📄 Certificate of Residency - <a href="#">View</a></li>
-        <li>📄 Barangay Clearance - <a href="#">View</a></li>
-        <li>📄 Indigency Certificate - <a href="#">View</a></li>
-      </ul>
+    <div class="records">
+      <div class="house">
+        <h3>🏡 House #1 - Dela Cruz Family</h3>
+        <ul>
+          <li>Juan Dela Cruz (Father)</li>
+          <li>Maria Dela Cruz (Mother)</li>
+          <li>Jose Dela Cruz (Son)</li>
+        </ul>
+      </div>
+      <div class="house">
+        <h3>🏡 House #2 - Santos Family</h3>
+        <ul>
+          <li>Pedro Santos (Father)</li>
+          <li>Ana Santos (Mother)</li>
+          <li>Liza Santos (Daughter)</li>
+        </ul>
+      </div>
+      <div class="house">
+        <h3>🏡 House #3 - Reyes Family</h3>
+        <ul>
+          <li>Mark Reyes (Father)</li>
+          <li>Rose Reyes (Mother)</li>
+          <li>Kyle Reyes (Son)</li>
+        </ul>
+      </div>
     </div>
   </div>
 </body>
