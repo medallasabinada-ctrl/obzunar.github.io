@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Incidents - Barangay System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-header"><h2>Barangay System</h2></div>
+    <ul class="menu">
+      <li><a href="index.html">🏠 Dashboard</a></li>
+      <li><a href="residents.html">👥 Residents</a></li>
+      <li><a href="incidents.html" class="active">🚨 Incidents</a></li>
+      <li><a href="records.html">📂 Records</a></li>
+      <li><a href="settings.html">⚙️ Settings</a></li>
+    </ul>
+    <div class="logout"><a href="#">🚪 Logout</a></div>
+  </div>
+
+  <div class="main-content">
+    <div class="header">
+      <h1>Incident Reports</h1>
+      <p>Monitor, record, and update barangay incident reports.</p>
+    </div>
+
+    <div class="content-section">
+      <table>
+        <thead>
+          <tr>
+            <th>Incident ID</th>
+            <th>Type</th>
+            <th>Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>INC-001</td><td>Fire</td><td>Nov 3, 2025</td><td><span class="status ongoing">Ongoing</span></td></tr>
+          <tr><td>INC-002</td><td>Dispute</td><td>Nov 2, 2025</td><td><span class="status resolved">Resolved</span></td></tr>
+          <tr><td>INC-003</td><td>Medical</td><td>Nov 1, 2025</td><td><span class="status pending">Pending</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
